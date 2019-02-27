@@ -135,6 +135,6 @@ MEDIA_URL = '/media/'
 
 # import all the information from local_settings; else, pass by that exception
 try: 
-    from local_settings import * 
+    from .local_settings import * 
 except ImportError:
     pass
