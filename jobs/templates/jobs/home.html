@@ -2,12 +2,8 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v3.8.5">
-    <title>Album example · Bootstrap</title>
+    {% load staticfiles %} 
+    <title>Carissa Allen - Software Engineer</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
 
@@ -36,15 +32,15 @@
   <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Carissa Allen</a>
+            <a class="navbar-brand" href="{% url 'home' %}">Carissa Allen</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link" href="#">GitHub</a>
-                <a class="nav-item nav-link" href="#">Resume</a>
-                <a class="nav-item nav-link" href="#">Blog</a>
+                <a class="nav-item nav-link" href="http://github.com/carissaallen">GitHub</a>
+                <a class="nav-item nav-link" href="{% static 'CarissaAllen_SoftwareEngineer_Resume.pdf' %}">Resume</a>
+                <a class="nav-item nav-link" href="{% url 'blogs' %}">Blog</a>
               </div>
             </div>
           </nav>
@@ -59,6 +55,7 @@
       <p>
         <a href="mailto:carissamaeallen@gmail.com" class="btn btn-primary my-2">Let's talk!</a>
       </p>
+      <img src="{% static 'JZM5Kf0TRpmWa7xg32MkHA_thumb_23d5.jpg' %}" height=250 />
     </div>
   </section>
 
@@ -89,9 +86,7 @@
 <footer class="text-muted">
   <div class="container">
     <p class="float-right">
-        <p>
-            © Carissa Allen {% now "Y" %}
-        </p>
+        <p>© Carissa Allen {% now "Y" %}</p>
   </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
