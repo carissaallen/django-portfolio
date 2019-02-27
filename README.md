@@ -1,4 +1,4 @@
-# Portfolio Built With Django
+# Portfolio + Blog Built With Django
 
 The goal of this project is to build my own portfolio, as well as a fully functional blog.
 
