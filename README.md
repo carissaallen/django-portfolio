@@ -15,14 +15,14 @@ Through the creation of this project, I learned how to:
 
 `ssh djangodeploy@carissa.io`
 
-Activate the virtual environment.
+Activate the virtual environment.<br>
 `source myvenv/bin/activate`
 
-After making changes, create and run new migrations.
+After making changes, create and run new migrations.<br>
 `python manage.py makemigrations`
 `python manage.py migrate`
 
-Restart Gunicorn, then restart Nginx.
+Restart Gunicorn, then restart Nginx.<br>
 `systemctl restart gunicorn && systemctl restart nginx`
 
 # Reference
