@@ -52,17 +52,20 @@
 <h1 class="text-center pt-4">Tonight, you're having...</hr>
 <br /> 
 <br /> 
-<h2>{{ meal }}</h2>  
+<h2 style="text-align:center; font-family: courier">{{ food }}</h2>  
 <br />
 </div>
+<center>
+<form action="{% url 'meal' %}" autofocus>
+        <input type="submit" value="pick again" />
+</form>
+</center>
+
 </main>
 
 <footer class="text-muted">
   <div class="container">
     <p class="float-right">
-        <p>
-            © Carissa Allen {% now "Y" %}
-        </p>
   </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

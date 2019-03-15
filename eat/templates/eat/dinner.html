@@ -51,12 +51,12 @@
     <div class="container">
 <h1 class="text-center pt-4">What's for dinner?</h1>
 <br /> 
-<br /> 
-<h2>Dinner Ideas</h2>  
 <br />
-<form action="{% url 'meal' %}">
+<center>
+<form action="{% url 'meal' %}" autofocus>
 	<input type="submit" value="Get a dinner idea!" />
 </form>
+</center>
 <br />
 </div>
 </main>
@@ -64,9 +64,6 @@
 <footer class="text-muted">
   <div class="container">
     <p class="float-right">
-        <p>
-            © Carissa Allen {% now "Y" %}
-        </p>
   </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
