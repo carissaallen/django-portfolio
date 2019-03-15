@@ -49,12 +49,15 @@
 
 <main role="main">
     <div class="container">
-<h1 class="text-center pt-4">Blog</h1>
+<h1 class="text-center pt-4">What's for dinner?</h1>
 <br /> 
 <br /> 
 <h2>Dinner Ideas</h2>  
 <br />
-
+<form action="{% url 'meal' %}">
+	<input type="submit" value="Get a dinner idea!" />
+</form>
+<br />
 </div>
 </main>
 
