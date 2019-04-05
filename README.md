@@ -25,6 +25,7 @@ Create and run new migrations, if necessary.<br>
 
 Restart Gunicorn, then restart Nginx.<br>
 `systemctl restart gunicorn && systemctl restart nginx`
+_(password protected)_
 
 # Reference
 Go [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-16-04) to reference how to set up Django with Postgres, Nginx, and Gunicorn on Ubuntu 16.04.
