@@ -20,7 +20,7 @@ Activate the virtual environment.<br>
 `source myvenv/bin/activate`
 
 Create and run new migrations, if necessary.<br>
-`python manage.py makemigrations`
+`python manage.py makemigrations`<br>
 `python manage.py migrate`
 
 Restart Gunicorn, then restart Nginx.<br>
