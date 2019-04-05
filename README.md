@@ -13,17 +13,18 @@ Through the creation of this project, I learned how to:
 
 # Deployments
 
-`ssh djangodeploy@carissa.io`
+`ssh djangodeploy@carissa.io`<br>
+_(password protected)_
 
 Activate the virtual environment.<br>
 `source myvenv/bin/activate`
 
-After making changes, create and run new migrations.<br>
-`python manage.py makemigrations`
+Create and run new migrations, if necessary.<br>
+`python manage.py makemigrations`<br>
 `python manage.py migrate`
 
 Restart Gunicorn, then restart Nginx.<br>
 `systemctl restart gunicorn && systemctl restart nginx`
 
 # Reference
-Click [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-16-04) to reference how to set up Django with Postgres, Nginx, and Gunicorn on Ubuntu 16.04.
+Go [here](https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-16-04) to reference how to set up Django with Postgres, Nginx, and Gunicorn on Ubuntu 16.04.

@@ -49,16 +49,18 @@
 
 <main role="main">
     <div class="container">
-<h1 class="text-center pt-4">What's for dinner?</h1>
+<h1 class="text-center pt-4">Tonight, you're having...</hr>
 <br /> 
-<br />
-<center>
-<form action="{% url 'meal' %}" autofocus>
-	<input type="submit" value="Get a dinner idea!" />
-</form>
-</center>
+<br /> 
+<h2 style="text-align:center; font-family: courier">{{ food }}</h2>  
 <br />
 </div>
+<center>
+<form action="{% url 'meal' %}" autofocus>
+        <input type="submit" value="pick again" />
+</form>
+</center>
+
 </main>
 
 <footer class="text-muted">
