@@ -1,1 +1,1 @@
-#override-bootstrap { background-color: blue; }
+#override-bootstrap body { background-color: blue; }
